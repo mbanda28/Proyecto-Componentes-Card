@@ -1,0 +1,117 @@
+:root {
+    /* - Mobile: 375px - Desktop: 1440px */
+    font-family: 'Outfit', sans-serif;
+
+    --Font-size-paragrah: 18px;
+     /* Colores Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+
+    --light-blur: hsl(217, 54%, 11%);
+    --blue: hsl(216, 50%, 16%);
+    --dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+body {
+    margin: 0;
+    background-color: var(--blue);
+} 
+#container {
+    padding: 30px;
+    box-shadow: 0 0 10px var(--Soft-blue);
+} 
+.contenedor {
+    margin: 20px auto;
+    width: 376px;
+    height: 680px;
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.contenedor-img:hover{
+    opacity: 0.6;
+    transform: scale(1.1);
+    width: 340px;
+    height: 340px;
+    margin: 16px 20px;
+}
+.contenedor-img{
+    margin: 0;
+    width: 375px;
+    height: 375px;
+    position: absolute;
+    transition: transform 0.3s ease-out;
+    overflow: hidden;
+}
+.contenedor-view{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin: 170px;
+}
+.contenedor:hover .contenedor-view{
+    opacity: 1;
+}
+.descripcion {
+    margin-top: 400px;
+    height: 267px;
+}
+h1 {
+    color: var(--White);
+    font-size: 28px;
+    margin: 20px 0 0 0;
+}
+h1:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+.p1 {
+    color: var(--Soft-blue);
+    font-size: 20px;
+    margin: 30px 0 40px 0;
+}
+.contenedor p:nth-child(4) {
+    display: inline;
+    color: var(--Cyan);
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+.contenedor p:nth-child(6) {
+    color: var(--Soft-blue);
+    display: inline;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 20px 10px;
+}
+.contenedor img:nth-child(5){
+    margin-left: calc(40% - 20px);
+    font-size: 20px;
+}
+.autor {
+    margin: 30px 0 0 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}   
+.autor img {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+}
+.pp {
+    color: var(--Soft-blue);
+    text-align: center;
+    margin: 0 0 0 10px;
+    font-size: 20px;
+}
+hr {
+    border: none;
+    border-bottom: 1px solid var(--Soft-blue);
+    margin: 30px 0 20px 0;
+}
